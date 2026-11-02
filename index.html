@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Royal Taste Restaurant</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid gold;
+}
+
+header h1 {
+    color: gold;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(#0009, #0009),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+    center/cover;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: gold;
+}
+
+.hero p {
+    margin: 20px;
+    font-size: 18px;
+}
+
+button {
+    background: gold;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: gold;
+    margin-bottom: 25px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.food {
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.food img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food h3 {
+    margin: 12px;
+}
+
+.food p {
+    color: gold;
+    margin: 10px;
+}
+
+.contact {
+    background: #1a1a1a;
+}
+
+footer {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+@media(max-width:600px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Royal Taste Restaurant</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h2>Welcome to Royal Taste</h2>
+<p>Delicious Food, Unforgettable Taste</p>
+
+<button onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+Explore Menu
+</button>
+</div>
+
+<section id="menu">
+
+<h2>Our Popular Menu</h2>
+
+<div class="menu">
+
+<div class="food">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+<h3>Classic Burger</h3>
+<p>₹149</p>
+</div>
+
+<div class="food">
+<img src="https://images.unsplash.com/photo-1579751626657-72bc17010498">
+<h3>Margherita Pizza</h3>
+<p>₹249</p>
+</div>
+
+<div class="food">
+<img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624">
+<h3>Chicken Biryani</h3>
+<p>₹199</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+
+<p>
+Royal Taste Restaurant serves delicious food
+prepared with fresh ingredients and love.
+Enjoy a wonderful dining experience with us.
+</p>
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Patna, Bihar</p>
+<p>🕒 Open: 11 AM – 11 PM</p>
+<p>📞 +91 9876543210</p>
+
+<br>
+
+<a href="https://wa.me/919876543210">
+<button>Order on WhatsApp</button>
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Royal Taste Restaurant</p>
+</footer>
+
+</body>
+</html>
